@@ -87,6 +87,11 @@ io.on("connection", (socket) => {
   });
 });
 
+app.get("/",(req,res)=>{
+     res.send("hello chandu")
+})
+  
+
 // listening on 5000 port
 const PORT = process.env.PORT || 5000;
 server.listen(PORT, () => console.log(`Listening on port ${PORT}`));
